@@ -1,6 +1,6 @@
 {
-  "name": "vux",
-  "version": "2.9.4",
+  "name": "vux-plus",
+  "version": "1.0.0",
   "main": "index.js",
   "description": "Mobile web UI based on Vue and WeUI",
   "keywords": [
@@ -16,10 +16,10 @@
     "framework",
     "frontend"
   ],
-  "author": "airyland <airyland@qq.com>",
+  "author": "zhengoogle <zhengoogle@sina.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/airyland/vux"
+    "url": "https://github.com/zhengoogle/vux"
   },
   "license": "MIT",
   "scripts": {
