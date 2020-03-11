@@ -449,17 +449,17 @@ export default {
         }
       }
 
-      if (this.max) {
-        if (this.currentValue.length > this.max) {
-          this.errors.max = `最多可以输入${this.max}个字符哦`
-          this.valid = false
-          this.forceShowError = true
-          return
-        } else {
-          this.forceShowError = false
-          delete this.errors.max
-        }
-      }
+      // if (this.max) { // delete verify hint info
+      //   if (this.currentValue.length > this.max) {
+      //     this.errors.max = `最多可以输入${this.max}个字符哦`
+      //     this.valid = false
+      //     this.forceShowError = true
+      //     return
+      //   } else {
+      //     this.forceShowError = false
+      //     delete this.errors.max
+      //   }
+      // }
 
       this.valid = true
     },

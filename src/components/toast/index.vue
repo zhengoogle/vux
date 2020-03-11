@@ -4,7 +4,7 @@
     <transition :name="currentTransition">
       <div class="weui-toast" :style="{width: width}" :class="toastClass" v-show="show">
         <i class="weui-icon-success-no-circle weui-icon_toast" v-show="type !== 'text'"></i>
-        <p class="weui-toast__content" v-if="text" :style="style" v-html="$t(text)"></p>
+        <p class="weui-toast__content" v-if="text" :style="style" v-html="text"></p>
         <p class="weui-toast__content" v-else :style="style">
           <slot></slot>
         </p>
@@ -110,6 +110,8 @@ export default {
 @import '../../styles/weui/icon/weui_icon_font';
 @import '../../styles/weui/widget/weui_tips/weui_toast';
 
+.vux-toast{
+}
 .weui-toast.vux-toast-top {
   top: @toast-position-top-offset;
 }

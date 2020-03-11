@@ -40,13 +40,16 @@ const plugin = {
         }
         $vm.show = true
       },
-      text (text, position = 'default') {
-        this.show({
+      text (text, position) {
+        const options = { // fix cover default bug
           type: 'text',
           width: 'auto',
-          position,
           text
-        })
+        }
+        if(position){
+          options.position = position
+        }
+        this.show(options)
       },
       hide () {
         $vm.show = false
